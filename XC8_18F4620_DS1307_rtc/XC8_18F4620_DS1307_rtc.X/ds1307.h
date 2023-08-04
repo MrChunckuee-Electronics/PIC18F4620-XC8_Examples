@@ -31,13 +31,13 @@ extern "C" {
 #define Sunday		7
 
 // Function Declarations
-void Write_Byte_To_DS1307_RTC(unsigned char, unsigned char);
-unsigned char Read_Byte_From_DS1307_RTC(unsigned char);
-void Write_Bytes_To_DS1307_RTC(unsigned char,unsigned char*,unsigned char);
-void Read_Bytes_From_DS1307_RTC(unsigned char,unsigned char*,unsigned int);
-void Set_DS1307_RTC_Time(unsigned char,unsigned char,unsigned char,unsigned char);
+void Write_Byte_To_DS1307_RTC(unsigned char Address, unsigned char DataByte);
+unsigned char Read_Byte_From_DS1307_RTC(unsigned char Address);
+void Write_Bytes_To_DS1307_RTC(unsigned char Address,unsigned char* pData,unsigned char NoOfBytes);
+void Read_Bytes_From_DS1307_RTC(unsigned char Address, unsigned char* pData, unsigned int NoOfBytes);
+void Set_DS1307_RTC_Time(unsigned char Mode, unsigned char Hours, unsigned char Mins, unsigned char Secs);
 unsigned char* Get_DS1307_RTC_Time(void);
-void Set_DS1307_RTC_Date(unsigned char,unsigned char,unsigned char,unsigned char);
+void Set_DS1307_RTC_Date(unsigned char Date, unsigned char Month, unsigned char Year, unsigned char Day);
 unsigned char* Get_DS1307_RTC_Date(void);
 
 

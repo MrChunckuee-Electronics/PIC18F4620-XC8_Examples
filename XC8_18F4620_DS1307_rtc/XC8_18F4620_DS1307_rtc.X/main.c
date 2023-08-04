@@ -5,14 +5,16 @@
  *******************************************************************************
  * FileName:        main.c
  * Processor:       PIC18F4620
- * Complier:        XC8 v1.42 & MPLAB X IDE v5.35
+ * Complier:        XC8 v2.36 & MPLAB X IDE v6.00
  * Author:          Pedro Sánchez (MrChunckuee)
  * Blog:            http://mrchunckuee.blogspot.com/
  * Email:           mrchunckuee.psr@gmail.com
  * Description:     Prueba de libreria para el RTC DS1307
  *******************************************************************************
  * Rev.         Date            Comment
- *   v0.0.0     10/07/2017      - Creación del ejemplo
+ *  v0.0.0      10/07/2017      - Creación del ejemplo
+ *  v1.0.0      03/08/2023      - Depuracion del codigo y compilacion del proyecto 
+ *                                usando XC8 v2.36 & MPLAB X IDE v6.00
  ******************************************************************************/
 
 #include <stdio.h>
